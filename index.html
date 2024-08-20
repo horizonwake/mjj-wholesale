@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <script>
+    if (window.location.hostname.includes('github.io')) {
+      document.head.innerHTML = `<base href="https://horizonwake.github.io/template-stc/">` + document.head.innerHTML;
+    }
+</script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="./index.js" type="module"></script>
+  <title>MJJ | Wholesale</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">Morning Jams and Jellies</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Top Jams</a></li>
+        <li><a href="#portfolio">About</a></li>
+        <li><a href="#price-list">Price List</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <img class="logo" src="./assets/images/logo.png" alt="MJJ logo">
+        <h1>Award Winning Jams and Jellies</h1>
+        <p>Small Batch, Always Fresh, No Preseratives, No Additives</p>
+        <a href="#contact" class="cta-button">Place an Order</a>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Our Top Jams</h2>
+      <div class="services">
+        <div class="service-card">
+          <img src="./assets/images/jams/red-pepper-jelly.jpg" alt="Landscape Design">
+          <h3>Hot Red Pepper Jelly</h3>
+          <p>Custom designs tailored to your space and preferences</p>
+        </div>
+        <div class="service-card">
+          <img src="./assets/images/jams/session-beer-jelly.jpg" alt="Hardscaping">
+          <h3>Session IPA Beer Jelly</h3>
+          <p>Create beautiful patios, walkways, and retaining walls</p>
+        </div>
+        <div class="service-card">
+          <img src="./assets/images/jams/port-wine-jelly.jpg" alt="Garden Maintenance">
+          <h3>Port Wine Jelly</h3>
+          <p>Keep your landscape looking pristine year-round</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <h2>Our Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="./assets/images/ingredients.jpg" alt="ingredients">
+          <div class="portfolio-overlay">
+            <p>Premium Ingredients</p>
+          </div>
+        </div>
+        <div class="portfolio-description">
+            We source only the finest, locally sourced ingredients to ensure the highest quality and freshest flavors in every jar. From ripe fruits to aromatic spices, every ingredient is selected for its superior taste and freshness.
+        </div>
+        <div class="portfolio-item">
+          <img src="./assets/images/handy.jpg" alt="Handcrafted Excellence">
+          <div class="portfolio-overlay">
+            <p>Handcrafted Excellence</p>
+          </div>
+        </div>
+        <div class="portfolio-description">
+            Each batch of our jams and jellies is meticulously handcrafted with care and attention to detail. We believe in preserving traditional methods while infusing our products with innovation and creativity.
+        </div>
+        <div class="portfolio-item">
+          <img src="./assets/images/flavor.jpg" alt="Spices">
+          <div class="portfolio-overlay">
+            <p>Unique Flavor Combinations</p>
+          </div>
+        </div>
+        <div class="portfolio-description">
+            Our expertly curated flavor combinations are what truly set us apart. From classic favorites to innovative blends, each of our jams and jellies offers a unique and unforgettable taste experience that keeps customers coming back for more.
+        </div>
+        <div class="portfolio-item">
+          <img src="./assets/images/sustainable.jpg" alt="Kitchen">
+          <div class="portfolio-overlay">
+            <p>Commitment to Sustainability</p>
+          </div>
+        </div>
+        <div class="portfolio-description">
+            We are dedicated to sustainability and environmentally friendly practices. From our packaging materials to our production processes, we strive to minimize our environmental footprint and contribute to a healthier planet.
+        </div>
+      </div>
+    </section>
+
+    <section id="price-list" class="section">
+      <h2>Price List</h2>
+      <div id="price-list-table"></div>
+      <div id="purchase-disclaimer">*Must be purchased in full case quantities only. </div>
+      <button id="btn-download" class="cta-button">Download Price List</button>
+      <div id="disclaimer">
+        <strong>NOTE:</strong> Gross Margins are based on 5+ cases quantities. Since our products always contain fresh ingredients some items by be seasonal and not available.
+All prices are subject to change. Prices are in CDN dollars. All taxes extra.
+Terms: COD on all shipments. 30 jars per case box can be split between two items at 15 per, 12 jars per box cannot be split.
+Origin and Shipment: All Morning Jams and Jellies are produced in the Niagara Region Canada, Shipments are FOB our Niagara Falls, Ont. location.
+We offer delivery within the Niagara region. Ask for details.
+Standard Delivery: 2-4 weeks from date of order received
+by Morning Jams and Jellies, depending on product selection and volumes.
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+
+      <h2>Contact Us</h2>
+      <form>
+        <input id="name" type="text" name="name" placeholder="Your Name" required="">
+        <input id="subject" type="text" name="subject" placeholder="subject" required="">
+        <textarea id="message" name="message" placeholder="Tell us about your project" required=""></textarea>
+        <button type="submit" id="btn-send-email" class="cta-button">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Morning Jams and Jellies. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.portfolio-item {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-description {
+    margin-top: -20px;
+    grid-row: 2;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out; /* Smooth transition for the sliding effect */
+  background-color: #f0f0f0; /* Example background */
+  padding: 0 20px; /* Start with 0 padding-top and padding-bottom */
+}
+
+/* Class to be added when a portfolio item is clicked */
+.portfolio-description.active {                           
+    max-height: 800px; /* Adjust based on content size */
+    padding: 20px; /* Adjust padding as needed */
+}
