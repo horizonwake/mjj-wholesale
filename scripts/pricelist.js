@@ -34,6 +34,39 @@ export const priceTable = () => {
                 margins: "52.44%",
             }
         },
+        {
+            category: "Pepper Jellies/Spicy (lg)",
+            product: "Red Hot Pepper Jelly",
+            size: { ml: 240, oz: 8 },
+            perCase: 12,
+            pricing: {
+                netPricing: [6.26, 6.09, 5.92],
+                msrp: "$12.99",
+                margins: "52.94%",
+            }
+        },
+        {
+            category: "Pepper Jellies/Spicy (lg)",
+            product: "Mango Pepper Jelly",
+            size: { ml: 240, oz: 8 },
+            perCase: 12,
+            pricing: {
+                netPricing: [8.08, 7.99, 7.79],
+                msrp: "$15.99",
+                margins: "52.44%",
+            }
+        },
+        {
+            category: "Pepper Jellies/Spicy (lg)",
+            product: "Pineapple Pepper Jelly",
+            size: { ml: 240, oz: 8 },
+            perCase: 12,
+            pricing: {
+                netPricing: [8.08, 7.99, 7.79],
+                msrp: "$15.99",
+                margins: "52.44%",
+            }
+        },
         // Jams
         {
             category: "Jams",
@@ -57,6 +90,95 @@ export const priceTable = () => {
                 margins: "48.49%",
             }
         },
+        {
+            category: "Jams",
+            product: "Mango Kiwi Passion Jam",
+            size: { ml: 180, oz: 6 },
+            perCase: 30,
+            pricing: {
+                netPricing: [5.60, 5.45, 5.29],
+                msrp: "$10.99",
+                margins: "50.45%"
+            }
+        },
+        {
+            category: "Jams",
+            product: "Strawberry Rhubarb Jam",
+            size: { ml: 180, oz: 6 },
+            perCase: 30,
+            pricing: {
+                netPricing: [5.60, 5.45, 5.29],
+                msrp: "$10.99",
+                margins: "50.45%"
+            }
+        },
+        {
+            category: "Jams",
+            product: "Guava Jam",
+            size: { ml: 180, oz: 6 },
+            perCase: 30,
+            pricing: {
+                netPricing: [5.83, 5.66, 5.50],
+                msrp: "$10.99",
+                margins: "48.49%"
+            }
+        },
+        {
+            category: "Jams (lg)",
+            product: "Bumbleberry Jam",
+            size: { ml: 240, oz: 8 },
+            perCase: 12,
+            pricing: {
+                netPricing: [6.62, 6.44, 5.89],
+                msrp: "$12.99",
+                margins: "50.46%"
+            }
+        },
+        {
+            category: "Jams (lg)",
+            product: "Pineapple Passion Jam",
+            size: { ml: 240, oz: 8 },
+            perCase: 12,
+            pricing: {
+                netPricing: [6.71, 6.50, 6.29],
+                msrp: "$12.99",
+                margins: "49.96%"
+            }
+        },
+        {
+            category: "Jams (lg)",
+            product: "Mango Kiwi Passion Jam",
+            size: { ml: 240, oz: 8 },
+            perCase: 12,
+            pricing: {
+                netPricing: [6.71, 6.50, 6.29],
+                msrp: "$12.99",
+                margins: "49.98%"
+            }
+        },
+        {
+            category: "Jams (lg)",
+            product: "Strawberry Rhubarb Jam",
+            size: { ml: 240, oz: 8 },
+            perCase: 12,
+            pricing: {
+                netPricing: [6.71, 6.50, 6.29],
+                msrp: "$12.99",
+                margins: "49.98%"
+            }
+        },
+        {
+            category: "Jams (lg)",
+            product: "Guava Jam",
+            size: { ml: 240, oz: 8 },
+            perCase: 12,
+            pricing: {
+                netPricing: [6.71, 6.50, 6.29],
+                msrp: "$12.99",
+                margins: "49.96%"
+            }
+        },
+
         // Alcohol Jellies
         {
             category: "Alcohol Jellies",
@@ -81,6 +203,17 @@ export const priceTable = () => {
             }
         },
         {
+            category: "Alcohol Jellies",
+            product: "Ice Wine Jelly",
+            size: { ml: 180, oz: 6 },
+            perCase: 30,
+            pricing: {
+                netPricing: [8.64, 8.45, 8.25],
+                msrp: "$16.99",
+                margins: "50.26%"
+            }
+        },
+        {
             category: "Alcohol Jellies/Spicy",
             product: "Hot Champagne Jelly",
             size: { ml: 180, oz: 6 },
@@ -100,6 +233,17 @@ export const priceTable = () => {
                 netPricing: [9.24, 8.96, 8.67],
                 msrp: "$16.99",
                 margins: "47.29%",
+            }
+        },
+        {
+            category: "Jellies",
+            product: "Fire and Ice Pepper Jelly",
+            size: { ml: 180, oz: 6 },
+            perCase: 30,
+            pricing: {
+                netPricing: [8.90, 8.62, 8.34],
+                msrp: "$16.99",
+                margins: "49.26%"
             }
         },
         // Alcohol Beer Jellies
