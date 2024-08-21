@@ -4,7 +4,6 @@
       margin: 20px 0;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
-      overflow: hidden;
     }
 
     th {
@@ -55,3 +54,34 @@
     #btn-download {
         margin: 20px  0 20px;
     }
+
+    /* Fixed Table Styles */
+    .table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+thead th {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.fixed-col {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}

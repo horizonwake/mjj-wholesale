@@ -150,7 +150,7 @@ export const priceTable = () => {
         // Create table element
         const table = document.createElement("table");
 
-        const topHeaders = [{text: '', span: 5},{text: 'Net Pricing', span: 3, class: 'group-header'},{text: '', span: 2}];
+        const topHeaders = [{ text: '', span: 1, class: 'fixed-col' }, { text: '', span: 4 },{text: 'Net Pricing', span: 3, class: 'group-header'},{text: '', span: 2}];
         const topHeaderRow = document.createElement('tr');
 
         topHeaders.forEach(header => {
@@ -170,6 +170,9 @@ export const priceTable = () => {
         headers.forEach(header => {
             const th = document.createElement("th");
             th.innerText = header;
+            if(header === "") {
+                th.setAttribute('class', 'fixed-col');
+            }
             headerRow.appendChild(th);
         });
 
@@ -194,6 +197,7 @@ export const priceTable = () => {
 
             // Category (only display it once per group)
             const categoryCell = document.createElement("th");
+            categoryCell.setAttribute('class', 'fixed-col');
             if (product.category !== lastCategory) {
                 categoryCell.innerText = product.category;
                 lastCategory = product.category;
