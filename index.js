@@ -53,28 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function sendEmail() {
-    const name = document.getElementById('name').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-
-    const emailBody = `${message}`;
-    const mailtoLink = `mailto:recipient@example.com?subject=${subject}&body=${encodeURIComponent(emailBody)}\n\nsubmitted by: ${name}`;
-
-    window.location.href = mailtoLink;
-}
-
-const ctaButton = document.getElementById('btn-send-email');
 const downloadPDFButton = document.getElementById('btn-download');
-
-ctaButton.addEventListener('click', function (event) {
-    var form = this.form;
-    if (!form.checkValidity()) {
-        event.preventDefault();
-        form.reportValidity();
-    } else {
-        sendEmail();
-    }
-});
 
 downloadPDFButton.addEventListener('click', downloadPDF);

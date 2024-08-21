@@ -282,14 +282,6 @@ export const priceTable = () => {
         }
     ];
 
-    function formatDate(date) {
-        return new Intl.DateTimeFormat('en-US', {
-            month: '2-digit',
-            day: '2-digit',
-            year: 'numeric',
-        }).format(date);
-    }
-
     function createTable(products) {
         // Create table element
         const table = document.createElement("table");
@@ -399,70 +391,82 @@ export const priceTable = () => {
     // Usage
     createTable(products);
 }
+// TODO: Generate PDF from live table data
+// export const downloadPDF = () => {
+//     // Load the jsPDF library
+//     const { jsPDF } = window.jspdf;
+
+//     // Create a new jsPDF instance
+//     const doc = new jsPDF();
+//     const imageUrl = './assets/images/logo.png';
+
+//     // Load the image
+//     const img = new Image();
+//     img.src = imageUrl;
+
+//     img.onload = function () {
+//         // Add the image (x: 10, y: 10, width: 50, height: 50)
+//         doc.addImage(img, 'PNG', 10, 10, 50, 50);
+
+//         doc.setFontSize(18);
+//         doc.text("Morning Jams and Jellies", 70, 30);  // Text to the right of the image
+//         doc.setFontSize(12);
+//         doc.text("Small Batch, Always Fresh, No Preservatives, No Additives", 70, 40);
+//         doc.text("Award Winning Jams and Jellies", 70, 50);
+//         //doc.text(this.this.formatDate(new Date()), 90, 50);
+
+//         // Reference to the HTML table
+//         const table = document.getElementById("price-list-table");
+
+//         // Use html2canvas to capture the table as an image
+//         html2canvas(table).then((canvas) => {
+//             const imgData = canvas.toDataURL('image/png');
+
+//             // Calculate page dimensions
+//             const pageWidth = doc.internal.pageSize.getWidth();
+//             const pageHeight = doc.internal.pageSize.getHeight();
+//             const imgWidth = pageWidth - 20; // Set width to fit within margins
+//             const imgHeight = canvas.height * imgWidth / canvas.width; // Maintain aspect ratio
+
+//             let position = 60; // Start position below the image and text
+
+//             // If the table is taller than the page, split it across pages
+//             if (imgHeight > pageHeight - 20) {
+//                 let heightLeft = imgHeight;
+//                 while (heightLeft > 0) {
+//                     doc.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
+//                     heightLeft -= pageHeight;
+//                     if (heightLeft > 0) {
+//                         doc.addPage(); // Add new page if necessary
+//                         position = 10; // Reset position on the new page
+//                     }
+//                 }
+//             } else {
+//                 // Add the table if it fits on one page
+//                 doc.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
+//             }
+
+//             // Open the PDF in a new tab or trigger download
+//             window.open(doc.output('bloburl'));
+
+//             // To trigger download automatically:
+//             // doc.save("table.pdf");
+//         });
+//     };
+// }
+
+export const formatDate = (date) => {
+    return new Intl.DateTimeFormat('en-US', {
+        month: '2-digit',
+        day: '2-digit',
+        year: 'numeric',
+    }).format(date).replace(/\//g, '-');
+};
 
 export const downloadPDF = () => {
-    // Load the jsPDF library
-    const { jsPDF } = window.jspdf;
-
-    // Create a new jsPDF instance
-    const doc = new jsPDF();
-
-    // Image URL (update with the correct path if necessary)
-    const imageUrl = './assets/images/logo.png';  // Replace with your image URL or base64 string
-
-    // Load the image
-    const img = new Image();
-    img.src = imageUrl;
-
-    // When the image is loaded, add it to the PDF
-    img.onload = function () {
-        // Add the image (x: 10, y: 10, width: 50, height: 50)
-        doc.addImage(img, 'PNG', 10, 10, 50, 50);
-
-        // Add custom text to the right of the image
-        doc.setFontSize(18);
-        doc.text("Morning Jams and Jellies", 70, 30);  // Text to the right of the image
-        doc.setFontSize(12);
-        doc.text("Small Batch, Always Fresh, No Preservatives, No Additives", 70, 40);
-        doc.text("Award Winning Jams and Jellies", 70, 50);
-        //doc.text(this.this.formatDate(new Date()), 90, 50);
-
-        // Reference to the HTML table
-        const table = document.getElementById("price-list-table");
-
-        // Use html2canvas to capture the table as an image
-        html2canvas(table).then((canvas) => {
-            const imgData = canvas.toDataURL('image/png');
-
-            // Calculate page dimensions
-            const pageWidth = doc.internal.pageSize.getWidth();
-            const pageHeight = doc.internal.pageSize.getHeight();
-            const imgWidth = pageWidth - 20; // Set width to fit within margins
-            const imgHeight = canvas.height * imgWidth / canvas.width; // Maintain aspect ratio
-
-            let position = 60; // Start position below the image and text
-
-            // If the table is taller than the page, split it across pages
-            if (imgHeight > pageHeight - 20) {
-                let heightLeft = imgHeight;
-                while (heightLeft > 0) {
-                    doc.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
-                    heightLeft -= pageHeight;
-                    if (heightLeft > 0) {
-                        doc.addPage(); // Add new page if necessary
-                        position = 10; // Reset position on the new page
-                    }
-                }
-            } else {
-                // Add the table if it fits on one page
-                doc.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
-            }
-
-            // Open the PDF in a new tab or trigger download
-            window.open(doc.output('bloburl'));
-
-            // To trigger download automatically:
-            // doc.save("table.pdf");
-        });
-    };
+    const link = document.createElement('a');
+    link.href = '../assets/pricelist/pricelist-08-2024.pdf';
+    link.download = `MJJ-PriceList-${formatDate(new Date())}.pdf`;
+    console.log(`MJJ-PriceList-${formatDate(new Date())}.pdf`);
+    link.click();
 }
