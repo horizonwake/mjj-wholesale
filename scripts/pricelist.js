@@ -1,396 +1,411 @@
 export const priceTable = () => {
-    const products = [
-        // Pepper Jellies/Spicy
-        {
-            category: "Pepper Jellies/Spicy",
-            product: "Red Hot Pepper Jelly",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [5.81, 5.64, 5.47],
-                msrp: "$11.99",
-                margins: "52.94%",
-            }
-        },
-        {
-            category: "Pepper Jellies/Spicy",
-            product: "Mango Pepper Jelly",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [6.87, 6.65, 6.44],
-                msrp: "$13.99",
-                margins: "52.44%",
-            }
-        },
-        {
-            category: "Pepper Jellies/Spicy",
-            product: "Pineapple Pepper Jelly",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [6.87, 6.65, 6.44],
-                msrp: "$13.99",
-                margins: "52.44%",
-            }
-        },
-        {
-            category: "Pepper Jellies/Spicy (lg)",
-            product: "Red Hot Pepper Jelly",
-            size: { ml: 240, oz: 8 },
-            perCase: 12,
-            pricing: {
-                netPricing: [6.26, 6.09, 5.92],
-                msrp: "$12.99",
-                margins: "52.94%",
-            }
-        },
-        {
-            category: "Pepper Jellies/Spicy (lg)",
-            product: "Mango Pepper Jelly",
-            size: { ml: 240, oz: 8 },
-            perCase: 12,
-            pricing: {
-                netPricing: [8.08, 7.99, 7.79],
-                msrp: "$15.99",
-                margins: "52.44%",
-            }
-        },
-        {
-            category: "Pepper Jellies/Spicy (lg)",
-            product: "Pineapple Pepper Jelly",
-            size: { ml: 240, oz: 8 },
-            perCase: 12,
-            pricing: {
-                netPricing: [8.08, 7.99, 7.79],
-                msrp: "$15.99",
-                margins: "52.44%",
-            }
-        },
-        // Jams
-        {
-            category: "Jams",
-            product: "Bumbleberry Jam",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [5.82, 5.65, 5.49],
-                msrp: "$10.99",
-                margins: "48.57%",
-            }
-        },
-        {
-            category: "Jams",
-            product: "Pineapple Passion Jam",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [5.83, 5.66, 5.50],
-                msrp: "$10.99",
-                margins: "48.49%",
-            }
-        },
-        {
-            category: "Jams",
-            product: "Mango Kiwi Passion Jam",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [5.60, 5.45, 5.29],
-                msrp: "$10.99",
-                margins: "50.45%"
-            }
-        },
-        {
-            category: "Jams",
-            product: "Strawberry Rhubarb Jam",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [5.60, 5.45, 5.29],
-                msrp: "$10.99",
-                margins: "50.45%"
-            }
-        },
-        {
-            category: "Jams",
-            product: "Guava Jam",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [5.83, 5.66, 5.50],
-                msrp: "$10.99",
-                margins: "48.49%"
-            }
-        },
-        {
-            category: "Jams (lg)",
-            product: "Bumbleberry Jam",
-            size: { ml: 240, oz: 8 },
-            perCase: 12,
-            pricing: {
-                netPricing: [6.62, 6.44, 5.89],
-                msrp: "$12.99",
-                margins: "50.46%"
-            }
-        },
-        {
-            category: "Jams (lg)",
-            product: "Pineapple Passion Jam",
-            size: { ml: 240, oz: 8 },
-            perCase: 12,
-            pricing: {
-                netPricing: [6.71, 6.50, 6.29],
-                msrp: "$12.99",
-                margins: "49.96%"
-            }
-        },
-        {
-            category: "Jams (lg)",
-            product: "Mango Kiwi Passion Jam",
-            size: { ml: 240, oz: 8 },
-            perCase: 12,
-            pricing: {
-                netPricing: [6.71, 6.50, 6.29],
-                msrp: "$12.99",
-                margins: "49.98%"
-            }
-        },
-        {
-            category: "Jams (lg)",
-            product: "Strawberry Rhubarb Jam",
-            size: { ml: 240, oz: 8 },
-            perCase: 12,
-            pricing: {
-                netPricing: [6.71, 6.50, 6.29],
-                msrp: "$12.99",
-                margins: "49.98%"
-            }
-        },
-        {
-            category: "Jams (lg)",
-            product: "Guava Jam",
-            size: { ml: 240, oz: 8 },
-            perCase: 12,
-            pricing: {
-                netPricing: [6.71, 6.50, 6.29],
-                msrp: "$12.99",
-                margins: "49.96%"
-            }
-        },
+  const products = [
+    // Pepper Jellies/Spicy
+    {
+      category: "Pepper Jellies/Spicy",
+      product: "Hot Red Pepper Jelly",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [5.81, 5.64, 5.47],
+        msrp: "$11.99",
+        margins: "52.94%",
+      },
+    },
+    {
+      category: "Pepper Jellies/Spicy",
+      product: "Mango Pepper Jelly",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [6.87, 6.65, 6.44],
+        msrp: "$13.99",
+        margins: "52.44%",
+      },
+    },
+    {
+      category: "Pepper Jellies/Spicy",
+      product: "Pineapple Pepper Jelly",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [6.87, 6.65, 6.44],
+        msrp: "$13.99",
+        margins: "52.44%",
+      },
+    },
+    {
+      category: "Pepper Jellies/Spicy (lg)",
+      product: "Hot Red Pepper Jelly",
+      size: { ml: 240, oz: 8 },
+      perCase: 12,
+      pricing: {
+        netPricing: [6.26, 6.09, 5.92],
+        msrp: "$12.99",
+        margins: "52.94%",
+      },
+    },
+    {
+      category: "Pepper Jellies/Spicy (lg)",
+      product: "Mango Pepper Jelly",
+      size: { ml: 240, oz: 8 },
+      perCase: 12,
+      pricing: {
+        netPricing: [8.08, 7.99, 7.79],
+        msrp: "$15.99",
+        margins: "52.44%",
+      },
+    },
+    {
+      category: "Pepper Jellies/Spicy (lg)",
+      product: "Pineapple Pepper Jelly",
+      size: { ml: 240, oz: 8 },
+      perCase: 12,
+      pricing: {
+        netPricing: [8.08, 7.99, 7.79],
+        msrp: "$15.99",
+        margins: "52.44%",
+      },
+    },
+    // Jams
+    {
+      category: "Jams",
+      product: "Bumbleberry Jam",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [5.82, 5.65, 5.49],
+        msrp: "$10.99",
+        margins: "48.57%",
+      },
+    },
+    {
+      category: "Jams",
+      product: "Pineapple Passion Jam",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [5.83, 5.66, 5.5],
+        msrp: "$10.99",
+        margins: "48.49%",
+      },
+    },
+    {
+      category: "Jams",
+      product: "Mango Kiwi Passion Jam",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [5.6, 5.45, 5.29],
+        msrp: "$10.99",
+        margins: "50.45%",
+      },
+    },
+    {
+      category: "Jams",
+      product: "Strawberry Rhubarb Jam",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [5.6, 5.45, 5.29],
+        msrp: "$10.99",
+        margins: "50.45%",
+      },
+    },
+    {
+      category: "Jams",
+      product: "Guava Jam",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [5.83, 5.66, 5.5],
+        msrp: "$10.99",
+        margins: "48.49%",
+      },
+    },
+    {
+      category: "Jams (lg)",
+      product: "Bumbleberry Jam",
+      size: { ml: 240, oz: 8 },
+      perCase: 12,
+      pricing: {
+        netPricing: [6.62, 6.44, 5.89],
+        msrp: "$12.99",
+        margins: "50.46%",
+      },
+    },
+    {
+      category: "Jams (lg)",
+      product: "Pineapple Passion Jam",
+      size: { ml: 240, oz: 8 },
+      perCase: 12,
+      pricing: {
+        netPricing: [6.71, 6.5, 6.29],
+        msrp: "$12.99",
+        margins: "49.96%",
+      },
+    },
+    {
+      category: "Jams (lg)",
+      product: "Mango Kiwi Passion Jam",
+      size: { ml: 240, oz: 8 },
+      perCase: 12,
+      pricing: {
+        netPricing: [6.71, 6.5, 6.29],
+        msrp: "$12.99",
+        margins: "49.98%",
+      },
+    },
+    {
+      category: "Jams (lg)",
+      product: "Strawberry Rhubarb Jam",
+      size: { ml: 240, oz: 8 },
+      perCase: 12,
+      pricing: {
+        netPricing: [6.71, 6.5, 6.29],
+        msrp: "$12.99",
+        margins: "49.98%",
+      },
+    },
+    {
+      category: "Jams (lg)",
+      product: "Guava Jam",
+      size: { ml: 240, oz: 8 },
+      perCase: 12,
+      pricing: {
+        netPricing: [6.71, 6.5, 6.29],
+        msrp: "$12.99",
+        margins: "49.96%",
+      },
+    },
 
-        // Alcohol Jellies
-        {
-            category: "Alcohol Jellies",
-            product: "Port Wine Jelly",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [7.73, 7.49, 7.25],
-                msrp: "$16.99",
-                margins: "55.91%",
-            }
-        },
-        {
-            category: "Alcohol Jellies",
-            product: "Reisling Wine Jelly",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [8.57, 8.30, 8.03],
-                msrp: "$16.99",
-                margins: "51.15%",
-            }
-        },
-        {
-            category: "Alcohol Jellies",
-            product: "Ice Wine Jelly",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [8.64, 8.45, 8.25],
-                msrp: "$16.99",
-                margins: "50.26%"
-            }
-        },
-        {
-            category: "Alcohol Jellies/Spicy",
-            product: "Hot Champagne Jelly",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [7.42, 7.18, 6.95],
-                msrp: "$16.99",
-                margins: "57.71%",
-            }
-        },
-        {
-            category: "Alcohol Jellies/Spicy",
-            product: "Fire and Ice Wine Jelly",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [9.24, 8.96, 8.67],
-                msrp: "$16.99",
-                margins: "47.29%",
-            }
-        },
-        {
-            category: "Jellies",
-            product: "Fire and Ice Pepper Jelly",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [8.90, 8.62, 8.34],
-                msrp: "$16.99",
-                margins: "49.26%"
-            }
-        },
-        // Alcohol Beer Jellies
-        {
-            category: "Alcohol Beer Jellies",
-            product: "Session IPA Beer Jelly",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [6.17, 6.03, 5.99],
-                msrp: "$12.99",
-                margins: "53.58%",
-            }
-        },
-        {
-            category: "Alcohol Beer Jellies",
-            product: "Hazy IPA Beer Jelly",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [6.17, 6.03, 5.99],
-                msrp: "$12.99",
-                margins: "53.58%",
-            }
-        },
-        {
-            category: "Alcohol Beer Jellies",
-            product: "Stout Beer Jelly",
-            size: { ml: 180, oz: 6 },
-            perCase: 30,
-            pricing: {
-                netPricing: [6.17, 6.03, 5.99],
-                msrp: "$12.99",
-                margins: "53.58%",
-            }
-        }
+    // Alcohol Jellies
+    {
+      category: "Alcohol Jellies",
+      product: "Port Wine Jelly",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [7.73, 7.49, 7.25],
+        msrp: "$16.99",
+        margins: "55.91%",
+      },
+    },
+    {
+      category: "Alcohol Jellies",
+      product: "Reisling Wine Jelly",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [8.57, 8.3, 8.03],
+        msrp: "$16.99",
+        margins: "51.15%",
+      },
+    },
+    {
+      category: "Alcohol Jellies",
+      product: "Ice Wine Jelly",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [8.64, 8.45, 8.25],
+        msrp: "$16.99",
+        margins: "50.26%",
+      },
+    },
+    {
+      category: "Alcohol Jellies/Spicy",
+      product: "Hot Champagne Jelly",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [7.42, 7.18, 6.95],
+        msrp: "$16.99",
+        margins: "57.71%",
+      },
+    },
+    {
+      category: "Alcohol Jellies/Spicy",
+      product: "Fire and Ice Wine Jelly",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [9.24, 8.96, 8.67],
+        msrp: "$16.99",
+        margins: "47.29%",
+      },
+    },
+    {
+      category: "Alcohol Jellies/Spicy",
+      product: "Fire and Ice Pepper Jelly",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [8.9, 8.62, 8.34],
+        msrp: "$16.99",
+        margins: "49.26%",
+      },
+    },
+    // Alcohol Beer Jellies
+    {
+      category: "Alcohol Beer Jellies",
+      product: "Session IPA Beer Jelly",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [6.17, 6.03, 5.99],
+        msrp: "$12.99",
+        margins: "53.58%",
+      },
+    },
+    {
+      category: "Alcohol Beer Jellies",
+      product: "Hazy IPA Beer Jelly",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [6.17, 6.03, 5.99],
+        msrp: "$12.99",
+        margins: "53.58%",
+      },
+    },
+    {
+      category: "Alcohol Beer Jellies",
+      product: "Stout Beer Jelly",
+      size: { ml: 180, oz: 6 },
+      perCase: 30,
+      pricing: {
+        netPricing: [6.17, 6.03, 5.99],
+        msrp: "$12.99",
+        margins: "53.58%",
+      },
+    },
+  ];
+
+  function createTable(products) {
+    // Create table element
+    const table = document.createElement("table");
+
+    const topHeaders = [
+      { text: "", span: 1, class: "fixed-col" },
+      { text: "", span: 4 },
+      { text: "Net Pricing", span: 3, class: "group-header" },
+      { text: "", span: 2 },
     ];
+    const topHeaderRow = document.createElement("tr");
 
-    function createTable(products) {
-        // Create table element
-        const table = document.createElement("table");
+    topHeaders.forEach((header) => {
+      const th = document.createElement("th");
+      th.innerText = header.text;
+      th.setAttribute("colspan", header.span);
+      if (header.class) {
+        th.setAttribute("class", header.class);
+      }
+      topHeaderRow.appendChild(th);
+    });
 
-        const topHeaders = [{ text: '', span: 1, class: 'fixed-col' }, { text: '', span: 4 },{text: 'Net Pricing', span: 3, class: 'group-header'},{text: '', span: 2}];
-        const topHeaderRow = document.createElement('tr');
+    // Create table header row
+    const headers = [
+      "",
+      "Product",
+      "Size (ml)",
+      "Size (oz)",
+      "Per Case",
+      "1+",
+      "5+ Mixed",
+      "15+ Mixed",
+      "MSRP",
+      "Gross Margins",
+    ];
+    const headerRow = document.createElement("tr");
 
-        topHeaders.forEach(header => {
-            const th = document.createElement("th");
-            th.innerText = header.text;
-            th.setAttribute("colspan", header.span)
-            if (header.class) {
-                th.setAttribute('class', header.class);
-            }
-            topHeaderRow.appendChild(th);
-        });
+    headers.forEach((header) => {
+      const th = document.createElement("th");
+      th.innerText = header;
+      if (header === "") {
+        th.setAttribute("class", "fixed-col");
+      }
+      headerRow.appendChild(th);
+    });
 
-        // Create table header row
-        const headers = ["", "Product", "Size (ml)", "Size (oz)", "Per Case", "1+", "5+ Mixed", "15+ Mixed", "MSRP", "Gross Margins"];
-        const headerRow = document.createElement("tr");
+    table.appendChild(topHeaderRow);
+    table.appendChild(headerRow);
 
-        headers.forEach(header => {
-            const th = document.createElement("th");
-            th.innerText = header;
-            if(header === "") {
-                th.setAttribute('class', 'fixed-col');
-            }
-            headerRow.appendChild(th);
-        });
+    let lastCategory = ""; // Keep track of the last category to manage duplicates
 
-        table.appendChild(topHeaderRow);
-        table.appendChild(headerRow);
+    // Create rows for each product
+    products.forEach((product, index) => {
+      // Spacer row before a new category (except for the first row)
+      if (product.category !== lastCategory && index !== 0) {
+        const spacerRow = document.createElement("tr");
+        const spacerCell = document.createElement("td");
+        spacerCell.setAttribute("colspan", headers.length);
+        spacerCell.innerHTML = "&nbsp;";
+        spacerRow.appendChild(spacerCell);
+        table.appendChild(spacerRow);
+      }
 
-        let lastCategory = ""; // Keep track of the last category to manage duplicates
+      const row = document.createElement("tr");
 
-        // Create rows for each product
-        products.forEach((product, index) => {
-            // Spacer row before a new category (except for the first row)
-            if (product.category !== lastCategory && index !== 0) {
-                const spacerRow = document.createElement("tr");
-                const spacerCell = document.createElement("td");
-                spacerCell.setAttribute("colspan", headers.length);
-                spacerCell.innerHTML = "&nbsp;";
-                spacerRow.appendChild(spacerCell);
-                table.appendChild(spacerRow);
-            }
+      // Category (only display it once per group)
+      const categoryCell = document.createElement("th");
+      categoryCell.setAttribute("class", "fixed-col");
+      if (product.category !== lastCategory) {
+        categoryCell.innerText = product.category;
+        lastCategory = product.category;
+      } else {
+        categoryCell.innerHTML = "&nbsp;"; // Empty cell if category repeats
+      }
+      row.appendChild(categoryCell);
 
-            const row = document.createElement("tr");
+      // Product
+      const productCell = document.createElement("td");
+      productCell.innerText = product.product;
+      row.appendChild(productCell);
 
-            // Category (only display it once per group)
-            const categoryCell = document.createElement("th");
-            categoryCell.setAttribute('class', 'fixed-col');
-            if (product.category !== lastCategory) {
-                categoryCell.innerText = product.category;
-                lastCategory = product.category;
-            } else {
-                categoryCell.innerHTML = "&nbsp;"; // Empty cell if category repeats
-            }
-            row.appendChild(categoryCell);
+      // Size (ml)
+      const sizeMlCell = document.createElement("td");
+      sizeMlCell.innerText = product.size.ml;
+      row.appendChild(sizeMlCell);
 
-            // Product
-            const productCell = document.createElement("td");
-            productCell.innerText = product.product;
-            row.appendChild(productCell);
+      // Size (oz)
+      const sizeOzCell = document.createElement("td");
+      sizeOzCell.innerText = product.size.oz;
+      row.appendChild(sizeOzCell);
 
-            // Size (ml)
-            const sizeMlCell = document.createElement("td");
-            sizeMlCell.innerText = product.size.ml;
-            row.appendChild(sizeMlCell);
+      // Per Case
+      const perCaseCell = document.createElement("td");
+      perCaseCell.innerText = product.perCase;
+      row.appendChild(perCaseCell);
 
-            // Size (oz)
-            const sizeOzCell = document.createElement("td");
-            sizeOzCell.innerText = product.size.oz;
-            row.appendChild(sizeOzCell);
+      // Net Pricing (1+, 5+ mixed, 15+ mixed)
+      product.pricing.netPricing.forEach((price) => {
+        const priceCell = document.createElement("td");
+        priceCell.innerText = price;
+        row.appendChild(priceCell);
+      });
 
-            // Per Case
-            const perCaseCell = document.createElement("td");
-            perCaseCell.innerText = product.perCase;
-            row.appendChild(perCaseCell);
+      // MSRP
+      const msrpCell = document.createElement("td");
+      msrpCell.innerText = product.pricing.msrp;
+      row.appendChild(msrpCell);
 
-            // Net Pricing (1+, 5+ mixed, 15+ mixed)
-            product.pricing.netPricing.forEach(price => {
-                const priceCell = document.createElement("td");
-                priceCell.innerText = price;
-                row.appendChild(priceCell);
-            });
+      // Margins
+      const marginsCell = document.createElement("td");
+      marginsCell.innerText = product.pricing.margins;
+      row.appendChild(marginsCell);
 
-            // MSRP
-            const msrpCell = document.createElement("td");
-            msrpCell.innerText = product.pricing.msrp;
-            row.appendChild(msrpCell);
+      // Append row to table
+      table.appendChild(row);
+    });
 
-            // Margins
-            const marginsCell = document.createElement("td");
-            marginsCell.innerText = product.pricing.margins;
-            row.appendChild(marginsCell);
+    // Append table to document body or a specific element
+    document.getElementById("price-list-table").appendChild(table);
+  }
 
-            // Append row to table
-            table.appendChild(row);
-        });
-
-
-        // Append table to document body or a specific element
-        document.getElementById('price-list-table').appendChild(table);
-    }
-
-    // Usage
-    createTable(products);
-}
+  // Usage
+  createTable(products);
+};
 // TODO: Generate PDF from live table data
 // export const downloadPDF = () => {
 //     // Load the jsPDF library
@@ -456,17 +471,19 @@ export const priceTable = () => {
 // }
 
 export const formatDate = (date) => {
-    return new Intl.DateTimeFormat('en-US', {
-        month: '2-digit',
-        day: '2-digit',
-        year: 'numeric',
-    }).format(date).replace(/\//g, '-');
+  return new Intl.DateTimeFormat("en-US", {
+    month: "2-digit",
+    day: "2-digit",
+    year: "numeric",
+  })
+    .format(date)
+    .replace(/\//g, "-");
 };
 
 export const downloadPDF = () => {
-    const link = document.createElement('a');
-    link.href = '../assets/pricelist/pricelist-08-2024.pdf';
-    link.download = `MJJ-PriceList-${formatDate(new Date())}.pdf`;
-    console.log(`MJJ-PriceList-${formatDate(new Date())}.pdf`);
-    link.click();
-}
+  const link = document.createElement("a");
+  link.href = "../assets/pricelist/pricelist-08-2024.pdf";
+  link.download = `MJJ-PriceList-${formatDate(new Date())}.pdf`;
+  console.log(`MJJ-PriceList-${formatDate(new Date())}.pdf`);
+  link.click();
+};

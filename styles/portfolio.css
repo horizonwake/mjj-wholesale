@@ -41,6 +41,7 @@
   .portfolio-overlay p {
     color: white;
     font-weight: bold;
+    text-align: center;
   }
 
 .portfolio-description {
@@ -69,6 +70,13 @@
     }
     .portfolio-overlay {
         font-size: 10px;
-        text-align: center;
     }
 }
+
+  @media only screen and (min-width: 577px) and (max-width: 768px) {
+    .portfolio-description.active {
+        width: 83vw;
+        grid-column: 1;
+    }
+  }
+  
