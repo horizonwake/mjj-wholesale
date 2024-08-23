@@ -2,7 +2,7 @@ export const priceTable = () => {
   const products = [
     // Pepper Jellies/Spicy
     {
-      category: "Pepper Jellies/Spicy",
+      category: "Pepper Jellies/Spicy (180 ml)",
       product: "Hot Red Pepper Jelly",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -13,7 +13,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Pepper Jellies/Spicy",
+      category: "Pepper Jellies/Spicy (180 ml)",
       product: "Mango Pepper Jelly",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -24,7 +24,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Pepper Jellies/Spicy",
+      category: "Pepper Jellies/Spicy (180 ml)",
       product: "Pineapple Pepper Jelly",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -35,7 +35,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Pepper Jellies/Spicy (lg)",
+      category: "Pepper Jellies/Spicy (240 ml)",
       product: "Hot Red Pepper Jelly",
       size: { ml: 240, oz: 8 },
       perCase: 12,
@@ -46,7 +46,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Pepper Jellies/Spicy (lg)",
+      category: "Pepper Jellies/Spicy (240 ml)",
       product: "Mango Pepper Jelly",
       size: { ml: 240, oz: 8 },
       perCase: 12,
@@ -57,7 +57,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Pepper Jellies/Spicy (lg)",
+      category: "Pepper Jellies/Spicy (240 ml)",
       product: "Pineapple Pepper Jelly",
       size: { ml: 240, oz: 8 },
       perCase: 12,
@@ -69,7 +69,7 @@ export const priceTable = () => {
     },
     // Jams
     {
-      category: "Jams",
+      category: "Jams (180 ml)",
       product: "Bumbleberry Jam",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -80,7 +80,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Jams",
+      category: "Jams (180 ml)",
       product: "Pineapple Passion Jam",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -91,7 +91,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Jams",
+      category: "Jams (180 ml)",
       product: "Mango Kiwi Passion Jam",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -102,7 +102,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Jams",
+      category: "Jams (180 ml)",
       product: "Strawberry Rhubarb Jam",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -113,7 +113,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Jams",
+      category: "Jams (180 ml)",
       product: "Guava Jam",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -124,7 +124,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Jams (lg)",
+      category: "Jams (240 ml)",
       product: "Bumbleberry Jam",
       size: { ml: 240, oz: 8 },
       perCase: 12,
@@ -135,7 +135,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Jams (lg)",
+      category: "Jams (240 ml)",
       product: "Pineapple Passion Jam",
       size: { ml: 240, oz: 8 },
       perCase: 12,
@@ -146,7 +146,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Jams (lg)",
+      category: "Jams (240 ml)",
       product: "Mango Kiwi Passion Jam",
       size: { ml: 240, oz: 8 },
       perCase: 12,
@@ -157,7 +157,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Jams (lg)",
+      category: "Jams (240 ml)",
       product: "Strawberry Rhubarb Jam",
       size: { ml: 240, oz: 8 },
       perCase: 12,
@@ -168,7 +168,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Jams (lg)",
+      category: "Jams (240 ml)",
       product: "Guava Jam",
       size: { ml: 240, oz: 8 },
       perCase: 12,
@@ -181,7 +181,7 @@ export const priceTable = () => {
 
     // Alcohol Jellies
     {
-      category: "Alcohol Jellies",
+      category: "Alcohol Jellies (180 ml)",
       product: "Port Wine Jelly",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -192,7 +192,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Alcohol Jellies",
+      category: "Alcohol Jellies (180 ml)",
       product: "Reisling Wine Jelly",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -203,7 +203,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Alcohol Jellies",
+      category: "Alcohol Jellies (180 ml)",
       product: "Ice Wine Jelly",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -214,7 +214,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Alcohol Jellies/Spicy",
+      category: "Alcohol Jellies/Spicy (180 ml)",
       product: "Hot Champagne Jelly",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -225,7 +225,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Alcohol Jellies/Spicy",
+      category: "Alcohol Jellies/Spicy (180 ml)",
       product: "Fire and Ice Wine Jelly",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -236,7 +236,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Alcohol Jellies/Spicy",
+      category: "Alcohol Jellies/Spicy (180 ml)",
       product: "Fire and Ice Pepper Jelly",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -248,7 +248,7 @@ export const priceTable = () => {
     },
     // Alcohol Beer Jellies
     {
-      category: "Alcohol Beer Jellies",
+      category: "Alcohol Beer Jellies (180 ml)",
       product: "Session IPA Beer Jelly",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -259,7 +259,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Alcohol Beer Jellies",
+      category: "Alcohol Beer Jellies (180 ml)",
       product: "Hazy IPA Beer Jelly",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -270,7 +270,7 @@ export const priceTable = () => {
       },
     },
     {
-      category: "Alcohol Beer Jellies",
+      category: "Alcohol Beer Jellies (180 ml)",
       product: "Stout Beer Jelly",
       size: { ml: 180, oz: 6 },
       perCase: 30,
@@ -308,7 +308,6 @@ export const priceTable = () => {
     const headers = [
       "",
       "Product",
-      "Size (ml)",
       "Size (oz)",
       "Per Case",
       "1+",
@@ -363,10 +362,10 @@ export const priceTable = () => {
       productCell.innerText = product.product;
       row.appendChild(productCell);
 
-      // Size (ml)
-      const sizeMlCell = document.createElement("td");
-      sizeMlCell.innerText = product.size.ml;
-      row.appendChild(sizeMlCell);
+    //   // Size (ml)
+    //   const sizeMlCell = document.createElement("td");
+    //   sizeMlCell.innerText = product.size.ml;
+    //   row.appendChild(sizeMlCell);
 
       // Size (oz)
       const sizeOzCell = document.createElement("td");
