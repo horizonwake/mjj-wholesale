@@ -7,9 +7,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [5.81, 5.64, 5.47],
-        msrp: "$11.99",
-        margins: "52.94%",
+        pricePerQuantity: [17.99, 17.49, 16.99, 16.49], // 3+, 8+, 12+, 20+
       },
     },
     {
@@ -18,9 +16,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [6.87, 6.65, 6.44],
-        msrp: "$13.99",
-        margins: "52.44%",
+        pricePerQuantity: [17.99, 17.49, 16.99, 16.49],
       },
     },
     {
@@ -29,9 +25,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [6.87, 6.65, 6.44],
-        msrp: "$13.99",
-        margins: "52.44%",
+        pricePerQuantity: [17.99, 17.49, 16.99, 16.49],
       },
     },
     {
@@ -40,9 +34,7 @@ export const priceTable = () => {
       size: { ml: 240, oz: 8 },
       perCase: 12,
       pricing: {
-        netPricing: [6.26, 6.09, 5.92],
-        msrp: "$12.99",
-        margins: "52.94%",
+        pricePerQuantity: ['N/A', 18.99, 18.49, 17.99],
       },
     },
     {
@@ -51,9 +43,7 @@ export const priceTable = () => {
       size: { ml: 240, oz: 8 },
       perCase: 12,
       pricing: {
-        netPricing: [8.08, 7.99, 7.79],
-        msrp: "$15.99",
-        margins: "52.44%",
+        pricePerQuantity: ['N/A', 18.99, 18.49, 17.99],
       },
     },
     {
@@ -62,9 +52,7 @@ export const priceTable = () => {
       size: { ml: 240, oz: 8 },
       perCase: 12,
       pricing: {
-        netPricing: [8.08, 7.99, 7.79],
-        msrp: "$15.99",
-        margins: "52.44%",
+        pricePerQuantity: ['N/A', 18.99, 18.49, 17.99],
       },
     },
     // Jams
@@ -74,9 +62,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [5.82, 5.65, 5.49],
-        msrp: "$10.99",
-        margins: "48.57%",
+        pricePerQuantity: [ 15.99, 15.49, 14.99, 14.49 ],
       },
     },
     {
@@ -85,9 +71,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [5.83, 5.66, 5.5],
-        msrp: "$10.99",
-        margins: "48.49%",
+        pricePerQuantity: [15.99, 15.49, 14.99, 14.49],
       },
     },
     {
@@ -96,9 +80,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [5.6, 5.45, 5.29],
-        msrp: "$10.99",
-        margins: "50.45%",
+        pricePerQuantity: [15.99, 15.49, 14.99, 14.49],
       },
     },
     {
@@ -107,9 +89,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [5.6, 5.45, 5.29],
-        msrp: "$10.99",
-        margins: "50.45%",
+        pricePerQuantity: [15.99, 15.49, 14.99, 14.49],
       },
     },
     {
@@ -118,9 +98,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [5.83, 5.66, 5.5],
-        msrp: "$10.99",
-        margins: "48.49%",
+        pricePerQuantity: [15.99, 15.49, 14.99, 14.49],
       },
     },
     {
@@ -129,9 +107,7 @@ export const priceTable = () => {
       size: { ml: 240, oz: 8 },
       perCase: 12,
       pricing: {
-        netPricing: [6.62, 6.44, 5.89],
-        msrp: "$12.99",
-        margins: "50.46%",
+        pricePerQuantity: ['N/A', 16.99, 16.49, 15.99],
       },
     },
     {
@@ -140,9 +116,7 @@ export const priceTable = () => {
       size: { ml: 240, oz: 8 },
       perCase: 12,
       pricing: {
-        netPricing: [6.71, 6.5, 6.29],
-        msrp: "$12.99",
-        margins: "49.96%",
+        pricePerQuantity: ['N/A', 16.99, 16.49, 15.99],
       },
     },
     {
@@ -151,7 +125,7 @@ export const priceTable = () => {
       size: { ml: 240, oz: 8 },
       perCase: 12,
       pricing: {
-        netPricing: [6.71, 6.5, 6.29],
+        pricePerQuantity: ['N/A', 16.99, 16.49, 15.99],
         msrp: "$12.99",
         margins: "49.98%",
       },
@@ -162,9 +136,7 @@ export const priceTable = () => {
       size: { ml: 240, oz: 8 },
       perCase: 12,
       pricing: {
-        netPricing: [6.71, 6.5, 6.29],
-        msrp: "$12.99",
-        margins: "49.98%",
+        pricePerQuantity: ['N/A', 16.99, 16.49, 15.99],
       },
     },
     {
@@ -173,9 +145,7 @@ export const priceTable = () => {
       size: { ml: 240, oz: 8 },
       perCase: 12,
       pricing: {
-        netPricing: [6.71, 6.5, 6.29],
-        msrp: "$12.99",
-        margins: "49.96%",
+        pricePerQuantity: ['N/A', 16.99, 16.49, 15.99],
       },
     },
 
@@ -186,9 +156,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [7.73, 7.49, 7.25],
-        msrp: "$16.99",
-        margins: "55.91%",
+        pricePerQuantity: [ 19.99, 19.49, 18.99, 18.49 ],
       },
     },
     {
@@ -197,9 +165,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [8.57, 8.3, 8.03],
-        msrp: "$16.99",
-        margins: "51.15%",
+        pricePerQuantity: [19.99, 19.49, 18.99, 18.49],
       },
     },
     {
@@ -208,9 +174,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [8.64, 8.45, 8.25],
-        msrp: "$16.99",
-        margins: "50.26%",
+        pricePerQuantity: [19.99, 19.49, 18.99, 18.49],
       },
     },
     {
@@ -219,9 +183,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [7.42, 7.18, 6.95],
-        msrp: "$16.99",
-        margins: "57.71%",
+        pricePerQuantity: [19.99, 19.49, 18.99, 18.49],
       },
     },
     {
@@ -230,9 +192,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [9.24, 8.96, 8.67],
-        msrp: "$16.99",
-        margins: "47.29%",
+        pricePerQuantity: [19.99, 19.49, 18.99, 18.49],
       },
     },
     {
@@ -241,9 +201,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [8.9, 8.62, 8.34],
-        msrp: "$16.99",
-        margins: "49.26%",
+        pricePerQuantity: [19.99, 19.49, 18.99, 18.49],
       },
     },
     // Alcohol Beer Jellies
@@ -253,9 +211,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [6.17, 6.03, 5.99],
-        msrp: "$12.99",
-        margins: "53.58%",
+        pricePerQuantity: [15.99, 15.49, 14.99, 14.49],
       },
     },
     {
@@ -264,9 +220,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [6.17, 6.03, 5.99],
-        msrp: "$12.99",
-        margins: "53.58%",
+        pricePerQuantity: [15.99, 15.49, 14.99, 14.49],
       },
     },
     {
@@ -275,9 +229,7 @@ export const priceTable = () => {
       size: { ml: 180, oz: 6 },
       perCase: 30,
       pricing: {
-        netPricing: [6.17, 6.03, 5.99],
-        msrp: "$12.99",
-        margins: "53.58%",
+        pricePerQuantity: [15.99, 15.49, 14.99, 14.49],
       },
     },
   ];
@@ -288,9 +240,8 @@ export const priceTable = () => {
 
     const topHeaders = [
       { text: "", span: 1, class: "fixed-col" },
-      { text: "", span: 4 },
-      { text: "Net Pricing", span: 3, class: "group-header" },
-      { text: "", span: 2 },
+      { text: "", span: 3 },
+      { text: "Pricing Per Quantity (4C)", span: 4, class: "group-header" },
     ];
     const topHeaderRow = document.createElement("tr");
 
@@ -309,12 +260,11 @@ export const priceTable = () => {
       "",
       "Product",
       "Size (oz)",
-      "Per Case",
-      "1+",
-      "5+ Mixed",
-      "15+ Mixed",
-      "MSRP",
-      "Gross Margins",
+      "Units Per Case",
+      "3+",
+      "8+",
+      "12+",
+      "20+",
     ];
     const headerRow = document.createElement("tr");
 
@@ -378,21 +328,21 @@ export const priceTable = () => {
       row.appendChild(perCaseCell);
 
       // Net Pricing (1+, 5+ mixed, 15+ mixed)
-      product.pricing.netPricing.forEach((price) => {
+      product.pricing.pricePerQuantity.forEach((price) => {
         const priceCell = document.createElement("td");
         priceCell.innerText = price;
         row.appendChild(priceCell);
       });
 
-      // MSRP
-      const msrpCell = document.createElement("td");
-      msrpCell.innerText = product.pricing.msrp;
-      row.appendChild(msrpCell);
+      // // MSRP
+      // const msrpCell = document.createElement("td");
+      // msrpCell.innerText = product.pricing.msrp;
+      // row.appendChild(msrpCell);
 
-      // Margins
-      const marginsCell = document.createElement("td");
-      marginsCell.innerText = product.pricing.margins;
-      row.appendChild(marginsCell);
+      // // Margins
+      // const marginsCell = document.createElement("td");
+      // marginsCell.innerText = product.pricing.margins;
+      // row.appendChild(marginsCell);
 
       // Append row to table
       table.appendChild(row);

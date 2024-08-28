@@ -1,0 +1,47 @@
+.ribbon-container {
+    display: inline-block;
+    position: relative;
+}
+
+.ribbon {
+    margin: 5px;
+    position: relative;
+    background: linear-gradient(45deg, #FFD700, #FFEA70, #FFD700, #FFC300, #FFD700);
+    background-size: 400% 400%;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: sparkle 4s infinite linear;
+    &.silver{
+        background: linear-gradient(45deg, #C0C0C0, #E0E0E0, #C0C0C0, #A0A0A0, #C0C0C0);
+        background-size: 400% 400%;
+        color: white;
+    }
+    &.bronze {
+        background: linear-gradient(45deg, #CD7F32, #D69B5D, #CD7F32, #B87333, #CD7F32);
+        background-size: 400% 400%;
+        color: white;
+    }
+}
+
+.ribbon-inner {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes sparkle {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
