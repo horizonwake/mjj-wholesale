@@ -13,27 +13,33 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
     let currentIndex = 0;
 
+    const heroSection = document.querySelector('.hero');
+    const overlay = document.querySelector('.hero-overlay');
+
     function changeBackground() {
-        const heroSection = document.querySelector('.hero');
-        heroSection.style.backgroundImage = `url('${images[currentIndex]}')`;
-        currentIndex = (currentIndex + 1) % images.length; // Loop back to the first image
+        overlay.style.backgroundImage = `url('${images[currentIndex]}')`;
+        overlay.style.opacity = 1;
+
+        setTimeout(() => {
+            heroSection.style.backgroundImage = `url('${images[currentIndex]}')`;
+            overlay.style.opacity = 0;
+            currentIndex = (currentIndex + 1) % images.length;
+        }, 2000); // Matches the CSS transition duration
     }
 
-    setInterval(changeBackground, 5000); // Change background every 5 seconds
+    setInterval(changeBackground, 5000);
 
     // Initial background set
     changeBackground();
 
-    // Portfolio item click event ----------------------------------------------
     const portfolioItems = document.querySelectorAll('.portfolio-item');
 
     portfolioItems.forEach((item, index) => {
         item.addEventListener('click', () => {
-            // Assuming the descriptive div is immediately after the portfolio item
             const descriptionDiv = item.nextElementSibling;
             const isActive = descriptionDiv.classList.contains('active');
 
-            // Optionally, hide all other descriptions
+            // hide all other descriptions
             document.querySelectorAll('.portfolio-description').forEach(desc => {
                 if (desc !== descriptionDiv) {
                     desc.classList.remove('active');
